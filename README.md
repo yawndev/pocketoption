@@ -1,8 +1,8 @@
 # pocketoption
 
-[![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)]()
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue)]()
-[![Made with Rust](https://img.shields.io/badge/core-Rust-orange)]()
+[![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)](../../releases)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![Made with Rust](https://img.shields.io/badge/core-Rust-orange)](https://www.rust-lang.org)
 
 A fast, native **PocketOption** client for Python — built on a Rust core.
 Stream live prices, build candles for **any timeframe (including seconds)**, place
@@ -27,13 +27,30 @@ trades, and react to events with low latency.
 
 ## Install
 
-Download the wheel for your OS from the [**Releases**](../../releases) page, then:
+1. Download the wheel for your OS from the [**Releases**](../../releases) page.
+2. Run `pip install` followed by the **full path to the downloaded file**:
 
 ```bash
-pip install pocketoption-0.6.0-*.whl
+pip install <path-to-the-downloaded-.whl>
 ```
 
-Pick the right file:
+Examples:
+
+```bash
+# Windows
+pip install C:\Users\you\Downloads\pocketoption-0.6.0-cp38-abi3-win_amd64.whl
+
+# Linux / macOS
+pip install ~/Downloads/pocketoption-0.6.0-cp38-abi3-manylinux_2_17_x86_64.whl
+```
+
+> **Tip — copy the file path:** Windows → Shift+right-click the file → *Copy as path*;
+> macOS → right-click, hold Option → *Copy … as Pathname*; Linux → copy path from your
+> file manager, or just drag the file into the terminal.
+
+This works the same on **Windows, Linux and macOS** — only the path format differs.
+
+Pick the right file for your system:
 
 | OS | Wheel |
 |----|-------|
